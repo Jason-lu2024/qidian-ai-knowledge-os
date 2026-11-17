@@ -1,0 +1,11 @@
+node_modules/
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+/artifacts/
+/MEMORY.md
+/启点AI_KnowledgeOS_PRD.md

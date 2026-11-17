@@ -1,0 +1,24 @@
+{
+  "name": "qidian-ai-knowledge-os",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --host 127.0.0.1",
+    "build": "vitepress build docs",
+    "build:production": "node scripts/check-production.mjs && vitepress build docs",
+    "preview": "vitepress preview docs",
+    "typecheck": "vue-tsc --noEmit",
+    "check:links": "node scripts/check-links.mjs",
+    "check:todos": "node scripts/list-todos.mjs",
+    "check:dist": "node scripts/check-dist.mjs",
+    "check": "npm run typecheck && npm run check:links && npm run check:todos && npm run build && npm run check:dist"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "typescript": "^5.8.3",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.18",
+    "vue-tsc": "^2.2.12"
+  }
+}
